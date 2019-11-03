@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
   { path: 'new-slide', loadChildren: './new-slide/new-slide.module#NewSlidePageModule' },
   { path: 'new-button', loadChildren: './new-button/new-button.module#NewButtonPageModule' },
-  { path: 'portfolio-b', loadChildren: './portfolio-b/portfolio-b.module#PortfolioBPageModule' }
+  { path: 'portfolio-b', loadChildren: './portfolio-b/portfolio-b.module#PortfolioBPageModule' },
+  { path: 'new-test', loadChildren: './new-test/new-test.module#NewTestPageModule' }
 ];
 @NgModule({
   imports: [
