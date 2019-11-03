@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
   { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
   { path: 'new-slide', loadChildren: './new-slide/new-slide.module#NewSlidePageModule' },
-  { path: 'new-button', loadChildren: './new-button/new-button.module#NewButtonPageModule' }
+  { path: 'new-button', loadChildren: './new-button/new-button.module#NewButtonPageModule' },
+  { path: 'new-portfolio', loadChildren: './new-portfolio/new-portfolio.module#NewPortfolioPageModule' }
 ];
 @NgModule({
   imports: [
