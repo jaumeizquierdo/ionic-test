@@ -1,0 +1,727 @@
+<ion-split-pane when="sm">
+
+  <ion-menu>
+
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-list-header>
+          Navigate
+        </ion-list-header>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot='start' name='home'></ion-icon>
+            <ion-label>
+              Home
+            </ion-label>
+          </ion-item>
+          
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot='start' name="arrow-forward"></ion-icon>
+            <ion-label>
+              Test
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <div class="ion-page red" main>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="title">Header</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <h1>Main Content</h1>
+
+      <ion-grid>
+
+        <ion-row>
+
+          <!-- ion-col con tamaño normal (bootstrap)-->
+          <ion-col>
+            <div>
+              1 of 3
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              2 of 3
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              3 of 3
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div>
+                otro col
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              otro col mas
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- ion-col con tamaño variable -->
+        <ion-row>
+          <ion-col size="auto">
+            <div>
+              div con contenido variable, más contenido variable del que tus ojos puedan leer
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div>
+              2 de 4
+            </div>
+          </ion-col>
+          <ion-col size="auto">
+            <div>
+              <ion-input placeholder="input de ejemplo"></ion-input>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+            <div>
+              4 de 4
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- ion-col con breakpoints -->
+
+        <ion-row>
+          <ion-col size="12" size-md>
+            <div>
+              1 de 4
+            </div>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <div>
+              2 de 4
+            </div>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <div>
+              3 de 4
+            </div>
+          </ion-col>
+          <ion-col size="12" size-md>
+            <div>
+              4 de 4
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- offsetting columns -->
+
+        <ion-row>
+          <ion-col size="3">
+            <div>
+              1 de 2
+            </div>
+          </ion-col>
+          <ion-col size="3" offset="3">
+            <div>
+              2 de 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size-md="2">
+            <div>
+              1 de 3
+            </div>
+          </ion-col>
+          <ion-col size-md="2">
+            <div>
+              2 de 3
+            </div>
+          </ion-col>
+          <ion-col size-md="2" offset-md="6">
+            <div>
+              3 de 3
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- push and pull -->
+
+        <ion-row>
+          <ion-col size="9" push="3">
+            <div>
+              1 of 2
+            </div>
+          </ion-col>
+          <ion-col size="3" pull="9">
+            <div>
+              2 of 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size-md="6" push-md="3">
+            <div>
+              1 of 3
+            </div>
+          </ion-col>
+          <ion-col size-md="3" push-md="3">
+            <div>
+              2 of 3
+            </div>
+          </ion-col>
+          <ion-col size-md="3" pull-md="9">
+            <div>
+              3 of 3
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <!-- vertical alignment -->
+
+        <ion-row class="ion-align-items-start">
+          <ion-col>
+            <div>
+              1 of 1
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              2 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              3 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              4 of 4<br>
+              #<br>
+              #<br>
+              #<br>
+              #
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-align-items-center">
+          <ion-col>
+            <div>
+              1 of 1
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              2 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              3 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              4 of 4<br>
+              #<br>
+              #<br>
+              #<br>
+              #
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-align-items-end">
+          <ion-col>
+            <div>
+              1 of 1
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              2 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              3 of 4
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              4 of 4<br>
+              #<br>
+              #<br>
+              #<br>
+              #
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-align-self-start">
+            <div>
+              1 of 4
+            </div>
+          </ion-col>
+          <ion-col class="ion-align-self-center">
+            <div>
+              2 of 4
+            </div>
+          </ion-col>
+          <ion-col class="ion-align-self-end">
+            <div>
+              4 of 4<br>
+              #<br>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div>
+              4 of 4<br>
+              #<br>
+              #<br>
+              #<br>
+              #<br>
+              #<br>
+              #<br>
+              #<br>
+              #
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="3" class="ion-justify-content-start">
+            <div>
+              1 de 2
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div>
+              2 de 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="3">
+            <div>
+              1 de 2
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div>
+              2 de 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-justify-content-end">
+          <ion-col size="3">
+            <div>
+              1 de 2
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div>
+              2 de 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-justify-content-around">
+          <ion-col size="3">
+            <div>
+              1 de 2
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div>
+              2 de 2
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <h3>text-start</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-end">
+              <h3>text-start</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-center">
+              <h3>text-start</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size-md="3">
+            <div class="ion-text-justify">
+              <h3>text-justify</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem. 
+            </div>
+          </ion-col>
+          <ion-col size-md="3">
+            <div class="ion-text-wrap">
+              <h3>text-wrap</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem. 
+            </div>
+          </ion-col>
+          <ion-col size-md="3">
+            <div class="ion-text-xl-nowrap">
+              <h3>text-nowrap</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem. 
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size-md="3" class="ion-float-left">
+            <div>
+              <h3>float-left</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+            </div>
+          </ion-col>
+          <ion-col size-md="3" class="ion-float-right">
+            <div>
+              <h3>float-right</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="ion-padding">
+              <div>
+                padding
+              </div>
+            </ion-col>
+            <ion-col class="ion-padding-top">
+              <div>
+                padding-top
+              </div>
+            </ion-col>
+            <ion-col class="ion-padding-start">
+              <div>
+                padding-start
+              </div>
+            </ion-col>
+            <ion-col class="ion-padding-end">
+              <div>
+                padding-end
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-padding-bottom">
+              <div>
+                padding-bottom
+              </div>
+            </ion-col>
+            <ion-col class="ion-padding-vertical">
+              <div>
+                padding-vertical
+              </div>
+            </ion-col>
+            <ion-col class="ion-padding-horizontal">
+              <div>
+                padding-horizontal
+              </div>
+            </ion-col>
+            <ion-col class="ion-no-padding">
+              <div>
+                no-padding
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <h2>Flex Utilities</h2>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-justify-content-start">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-justify-content-center">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-justify-content-end">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-justify-content-around">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-justify-content-between">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-justify-content-evenly">
+              <ion-col size="3">
+                <div>
+                  1 of 2
+                </div>
+              </ion-col>
+              <ion-col size="3">
+                <div>
+                  2 of 2
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+          <ion-grid>
+            <ion-row class="ion-align-items-start">
+              <ion-col>
+                <div>
+                  1 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  4 of 4 <br>
+                  # <br>
+                  # <br>
+                  #
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-align-items-end">
+              <ion-col>
+                <div>
+                  1 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  4 of 4 <br>
+                  # <br>
+                  # <br>
+                  #
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-align-items-center">
+              <ion-col>
+                <div>
+                  1 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  4 of 4 <br>
+                  # <br>
+                  # <br>
+                  #
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-align-items-baseline">
+              <ion-col>
+                <div>
+                  1 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  4 of 4 <br>
+                  # <br>
+                  # <br>
+                  #
+                </div>
+              </ion-col>
+            </ion-row>
+          
+            <ion-row class="ion-align-items-stretch">
+              <ion-col>
+                <div>
+                  1 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  2 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  3 of 4
+                </div>
+              </ion-col>
+              <ion-col>
+                <div>
+                  4 of 4 <br>
+                  # <br>
+                  # <br>
+                  #
+                </div>
+              </ion-col>
+            </ion-row>
+
+
+            <ion-row class="ion-align-items-center">
+              <ion-col>
+                <div>1</div>
+              </ion-col>
+              <ion-col>
+                <div>2</div>
+              </ion-col>
+              <ion-col>
+                  <div>2</div>
+                </ion-col>
+                <ion-col>
+                    <div>4 of 4 <br>
+                      # <br>
+                      # <br>
+                      #</div>
+                  </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-justify-content-center">
+              <ion-col>
+                <div>1</div>
+              </ion-col>
+              <ion-col>
+                <div>2</div>
+              </ion-col>
+            </ion-row>
+
+      </ion-grid>
+
+    </ion-content>
+    
+  </div>
+
+</ion-split-pane>
