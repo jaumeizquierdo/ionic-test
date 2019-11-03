@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'cards', loadChildren: './cards/cards.module#CardsPageModule' },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
   { path: 'slides', loadChildren: './slides/slides.module#SlidesPageModule' },
-  { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' }
+  { path: 'buttons', loadChildren: './buttons/buttons.module#ButtonsPageModule' },
+  { path: 'new-slide', loadChildren: './new-slide/new-slide.module#NewSlidePageModule' }
 ];
 @NgModule({
   imports: [
